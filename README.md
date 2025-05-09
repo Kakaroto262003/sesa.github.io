@@ -1,2 +1,0 @@
-# sesa.github.io
-web
