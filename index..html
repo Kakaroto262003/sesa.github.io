@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Demo</title>
+  <style>
+    /* Reset dan font */
+    body {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+	  background: #b0e0e6;
+      color: #333;
+    }
+
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      color: #204dbf;
+    }
+
+    /* Tombol CTA */
+    .cta-btn {
+      background:#204dbf;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background:#163a94;
+    }
+
+    /* Section Hero */
+    .hero {
+      background-images: url('hotel.jpg');
+      text-align: center;
+      padding: 60px 20px;
+      color: #black;
+    }
+}
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    /* Fitur utama */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      background-color: #white;
+    }
+
+    .feature-box {
+      width: 30%;
+      min-width: 250px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .feature-box img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    /* Statistik */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background:#e7f7f6;
+      flex-wrap: wrap;
+    }
+
+    .stats div {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .stats h2 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    /* Demo section */
+    .demo-section {
+      text-align: center;
+      padding: 60px 20px;
+      background:#fff;
+    }
+
+    /* Footer */
+    footer {
+      background: #263238;
+      color: white;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer div {
+      margin-bottom: 20px;
+    }
+
+    footer a {
+      color: #90caf9;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer h4 {
+      margin-bottom: 10px;
+    }
+
+    .email-signup input {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 8px;
+      width: 200px;
+    }
+
+    @media (max-width: 768px) {
+      .features,
+      .stats,
+      footer {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header dengan navigasi -->
+  <header>
+    <h2>My Website</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>WELCOME SESA HOTEL</h1>
+    <p>Your satisfaction is our priority</p>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="features">
+    <div class="feature-box">
+      <img src="https://via.placeholder.com/80" alt="Facility 1">
+      <h3>ROOM TYPES</h3>
+      <p>DELUXE ROOMS.</p>
+	  <p>Comfortable and elegant room with premium service and aminities.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://via.placeholder.com/80" alt="Facility 2">
+      <h3>SWIMMING POOL</h3>
+	  <p>SWIMMING POOL.</p>
+      <p>Relax and unwind in our luxurious outdoor pool area.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://via.placeholder.com/80" alt="facilities 3">
+      <h3>RESTAURANT</h3>
+      <p>RESTAURANT & CAFE.</p>
+	  <p>Savor delicious cuisine with a scenic view warm atmospher.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="demo-section">
+    <h2>Contact Us</h2>
+    <p>Email: sesariuspawika910@gmail.com</p>
+    <p>Phone: +6282146062061</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>About Us</h4>
+      <p>We provide the best service for our customers.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Subscribe</h4>
+      <div class="email-signup">
+        <input type="email" placeholder="Your email">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
